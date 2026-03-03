@@ -9,19 +9,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Integrity message
-        run: echo "Pipeline Integrity Verified - Monitoring Active"name: heartbeat
-
-on:
-  push:
-
-jobs:
-  heartbeat:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Integrity message
         run: echo "Pipeline Integrity Verified - Monitoring Active"
+
